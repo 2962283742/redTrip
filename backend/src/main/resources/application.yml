@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://bdbaq.cn:3306/redTrip
+      username: root
+      password: 1937dzl.
+server:
+  port: 10086
