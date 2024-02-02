@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.redTrip.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="cn.redTrip.entity.User">
+            <id property="userId" column="userId" jdbcType="INTEGER"/>
+            <result property="number" column="number" jdbcType="CHAR"/>
+            <result property="password" column="password" jdbcType="CHAR"/>
+            <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+            <result property="nickname" column="nickname" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="TINYINT"/>
+            <result property="brithday" column="brithday" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        userId,number,password,
+        avatar,nickname,sex,
+        brithday
+    </sql>
+</mapper>
