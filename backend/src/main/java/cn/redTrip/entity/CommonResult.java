@@ -2,12 +2,14 @@ package cn.redTrip.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author dzl
  * @date 2024/2/2 17:01
  */
 @Data
-public class CommonResult {
+public class CommonResult implements Serializable {
 
     private Object data;
 

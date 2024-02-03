@@ -1,11 +1,8 @@
 package cn.redTrip.mapper;
 
 import cn.redTrip.entity.User;
-import cn.redTrip.entity.dto.UserRegister;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.SelectKey;
 
 /**
 * @author 29622

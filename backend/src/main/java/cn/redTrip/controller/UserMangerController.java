@@ -2,12 +2,8 @@ package cn.redTrip.controller;
 
 import cn.redTrip.entity.CommonResult;
 import cn.redTrip.entity.User;
-import cn.redTrip.entity.dto.UserRegister;
 import cn.redTrip.service.UserService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -31,6 +27,13 @@ public class UserMangerController {
     @PostMapping("/register")
     public CommonResult register(@RequestBody User user){
         return userService.register(user);
+    }
+
+
+
+    @GetMapping("/info")
+    public CommonResult getUserInfo(){
+        return userService.getUserInfo();
     }
 
 }

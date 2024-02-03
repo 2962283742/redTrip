@@ -9,6 +9,11 @@ spring:
     host: bdbaq.cn
     port: 6379
     password: 1937dzl.
+  cache:
+    type: redis
+    redis:
+      time-to-live: 3600000
+
 
 server:
   port: 10086

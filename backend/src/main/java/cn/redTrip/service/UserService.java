@@ -2,7 +2,6 @@ package cn.redTrip.service;
 
 import cn.redTrip.entity.CommonResult;
 import cn.redTrip.entity.User;
-import cn.redTrip.entity.dto.UserRegister;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -13,4 +12,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface UserService extends IService<User> {
 
     CommonResult register(User user);
+
+    CommonResult getUserInfo();
 }
