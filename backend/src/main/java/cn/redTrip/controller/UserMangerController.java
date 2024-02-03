@@ -19,8 +19,8 @@ public class UserMangerController {
     private UserService userService;
 
     @PostMapping("/login")
-    public CommonResult login(){
-       return CommonResult.success(userService.list().toString());
+    public CommonResult login(@RequestBody User user){
+       return userService.login(user);
     }
 
 

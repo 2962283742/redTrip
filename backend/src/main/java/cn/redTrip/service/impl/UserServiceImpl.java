@@ -4,6 +4,7 @@ import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.redTrip.common.UserLocalThread;
 import cn.redTrip.entity.CommonResult;
+import cn.redTrip.entity.EnumObject;
 import cn.redTrip.entity.dto.UserVo;
 import cn.redTrip.exception.NullException;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -78,6 +79,27 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         }
 
         return CommonResult.success(o);
+
+
+    }
+
+    @Override
+    public CommonResult login(User user) {
+        LambdaQueryWrapper<User> userLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        userLambdaQueryWrapper.eq(User::getNumber,user.getNumber()).eq(User::getPassword,user.getPassword());
+        User one = userService.getOne(userLambdaQueryWrapper);
+        if (ObjectUtils.isEmpty(one)){
+            return CommonResult.fail("用户名或密码错误", EnumObject.PASSWORD_ERROR);
+        }else{
+
+            StpUtil.login(one.getUserId());
+            SaTokenInfo tokenInfo = StpUtil.getTokenInfo();
+            UserVo userVo = new UserVo();
+            BeanUtils.copyProperties(one,userVo);
+            redisTemplate.opsForValue().set(prefix+one.getUserId().toString(),userVo,expireTime, TimeUnit.SECONDS);
+            return CommonResult.success(tokenInfo);
+
+        }
 
 
     }
