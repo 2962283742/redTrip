@@ -1,11 +1,12 @@
 spring:
   datasource:
     druid:
-      url: jdbc:mysql://bdbaq.cn:3306/redTrip
+      url: 
       username: root
-      password: 1937dzl.
+      password: 
   redis:
     database: 2
+<<<<<<< HEAD
     host: bdbaq.cn
     port: 6379
     password: 1937dzl.
@@ -33,6 +34,11 @@ sa-token:
   # 是否输出操作日志
   is-log: true
 
+=======
+    host: 
+    port: 
+    password: 
+>>>>>>> 84e057f03dfc345ce78b6fc57b0b03111b80ac0f
 
 server:
   port: 10086
