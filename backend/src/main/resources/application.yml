@@ -1,14 +1,14 @@
 spring:
   datasource:
     druid:
-      url: jdbc:mysql://bdbaq.cn:3306/redTrip
+      url: 
       username: root
-      password: 1937dzl.
+      password: 
   redis:
     database: 2
-    host: bdbaq.cn
-    port: 6379
-    password: 1937dzl.
+    host: 
+    port: 
+    password: 
 
 server:
   port: 10086
