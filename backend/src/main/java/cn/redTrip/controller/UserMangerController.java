@@ -31,15 +31,15 @@ public class UserMangerController {
     }
 
 
-
+    @PostMapping("/update")
+    public CommonResult updateUserInfo(@RequestBody User user){
+        return userService.updateUserInfo(user);
+    }
     @GetMapping("/info")
     public CommonResult getUserInfo(){
         return userService.getUserInfo();
     }
 
 
-    @PostMapping("/update")
-    public CommonResult updateUserInfo(@RequestBody User user){
-        return userService.updateUserInfo(user);
-    }
+
 }

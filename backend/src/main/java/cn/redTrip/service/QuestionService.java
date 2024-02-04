@@ -2,6 +2,7 @@ package cn.redTrip.service;
 
 import cn.redTrip.entity.CommonResult;
 import cn.redTrip.entity.Question;
+import cn.redTrip.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.stereotype.Service;
 
@@ -16,4 +17,12 @@ public interface QuestionService extends IService<Question> {
     CommonResult getQuestions(Integer type);
 
     CommonResult justiceOption(Integer questionId,String option);
+
+    CommonResult generateRecord(Integer type);
+
+    CommonResult queryRecord();
+
+
+
+    CommonResult deleteRecord(Integer id);
 }

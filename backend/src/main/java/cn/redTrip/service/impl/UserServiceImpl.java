@@ -6,6 +6,7 @@ import cn.redTrip.common.UserLocalThread;
 import cn.redTrip.entity.CommonResult;
 import cn.redTrip.entity.EnumObject;
 import cn.redTrip.entity.dto.UserVo;
+import cn.redTrip.mapper.UserQuestionMapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import cn.redTrip.entity.User;
@@ -45,6 +46,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
     private Integer expireTime;
     @Resource
     private RedisTemplate<String,Object> redisTemplate;
+
+    @Resource
+    private UserQuestionMapper userQuestionMapper;
 
     @Override
     public CommonResult register(User user){
@@ -110,8 +114,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
     @Override
     public CommonResult updateUserInfo(User user) {
 
-            user.setUserId(UserLocalThread.getThreadLocal());
-            userMapper.updateUserInfo(user);
+        user.setUserId(UserLocalThread.getThreadLocal());
+        userMapper.updateUserInfo(user);
 
 
 
