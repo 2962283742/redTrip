@@ -6,7 +6,6 @@ import cn.redTrip.common.UserLocalThread;
 import cn.redTrip.entity.CommonResult;
 import cn.redTrip.entity.EnumObject;
 import cn.redTrip.entity.dto.UserVo;
-import cn.redTrip.exception.NullException;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import cn.redTrip.entity.User;
@@ -15,11 +14,13 @@ import cn.redTrip.mapper.UserMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -31,6 +32,9 @@ import java.util.concurrent.TimeUnit;
 public class UserServiceImpl extends ServiceImpl<UserMapper, User>
     implements UserService{
 
+
+    @Resource
+    private UserMapper userMapper;
     @Resource
     private UserService userService;
 
@@ -43,15 +47,14 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
     private RedisTemplate<String,Object> redisTemplate;
 
     @Override
-    public CommonResult register(User user) {
-        try {
+    public CommonResult register(User user){
+        try{
             userService.save(user);
             StpUtil.login(user.getUserId());
             SaTokenInfo tokenInfo = StpUtil.getTokenInfo();
             return CommonResult.success(tokenInfo);
-
-        }catch (NullPointerException e){
-            throw new NullException("注册失败");
+        }catch (DataIntegrityViolationException dataIntegrityViolationException){
+            throw new DataIntegrityViolationException("手机号已被注册");
         }
 
 
@@ -102,6 +105,17 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         }
 
 
+    }
+
+    @Override
+    public CommonResult updateUserInfo(User user) {
+
+            user.setUserId(UserLocalThread.getThreadLocal());
+            userMapper.updateUserInfo(user);
+
+
+
+        return CommonResult.success("修改成功");
     }
 }
 

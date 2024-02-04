@@ -2,7 +2,7 @@ package cn.redTrip.handler;
 
 import cn.dev33.satoken.stp.StpUtil;
 import cn.redTrip.common.UserLocalThread;
-import cn.redTrip.exception.WithoutTokenException;
+
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
@@ -29,8 +29,8 @@ public class GlobalHandler implements HandlerInterceptor {
             String token = request.getHeader("Token");
             Object loginId = StpUtil.getLoginIdByToken(token);
             UserLocalThread.setThreadLocal(loginId);
-        }catch (Exception e){
-            throw new WithoutTokenException();
+        }catch (NumberFormatException numberFormatException){
+            throw new NumberFormatException();
         }
 
 

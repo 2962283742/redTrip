@@ -4,6 +4,8 @@ import cn.redTrip.entity.CommonResult;
 import cn.redTrip.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.sql.SQLIntegrityConstraintViolationException;
+
 /**
 * @author 29622
 * @description 针对表【user】的数据库操作Service
@@ -16,4 +18,6 @@ public interface UserService extends IService<User> {
     CommonResult getUserInfo();
 
     CommonResult login(User user);
+
+    CommonResult updateUserInfo(User user);
 }
