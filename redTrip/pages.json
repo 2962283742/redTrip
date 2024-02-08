@@ -55,6 +55,7 @@
 			}
 		},
 		{
+<<<<<<< HEAD
 			"path" : "pages/socialist/socialist",
 			"style" : 
 			{
@@ -110,6 +111,9 @@
 		},
 		{
 			"path" : "pages/cigarettes/cigarettes",
+=======
+			"path" : "pages/RedMeeting/RedMeeting",
+>>>>>>> 66e9c3d8686f62729d5c4d3444a4d7a2fc8ad46c
 			"style" : 
 			{
 				"navigationBarTitleText" : "",
