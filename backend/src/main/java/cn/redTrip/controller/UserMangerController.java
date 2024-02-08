@@ -6,6 +6,7 @@ import cn.redTrip.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.sql.SQLIntegrityConstraintViolationException;
 
 /**
  * @author dzl
@@ -19,21 +20,26 @@ public class UserMangerController {
     private UserService userService;
 
     @PostMapping("/login")
-    public CommonResult login(){
-       return CommonResult.success(userService.list().toString());
+    public CommonResult login(@RequestBody User user){
+       return userService.login(user);
     }
 
 
     @PostMapping("/register")
-    public CommonResult register(@RequestBody User user){
+    public CommonResult register (@RequestBody User user){
         return userService.register(user);
     }
 
 
-
+    @PostMapping("/update")
+    public CommonResult updateUserInfo(@RequestBody User user){
+        return userService.updateUserInfo(user);
+    }
     @GetMapping("/info")
     public CommonResult getUserInfo(){
         return userService.getUserInfo();
     }
+
+
 
 }

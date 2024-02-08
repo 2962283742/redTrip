@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.redTrip.mapper.UserQuestionMapper">
+
+    <resultMap id="BaseResultMap" type="cn.redTrip.entity.UserQuestion">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="userId" column="userId" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="DATE"/>
+            <result property="questionType" column="questionType" jdbcType="TINYINT"/>
+            <result property="userOption" column="userOption" jdbcType="CHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userId,createTime,
+        questionType,userOption
+    </sql>
+</mapper>
