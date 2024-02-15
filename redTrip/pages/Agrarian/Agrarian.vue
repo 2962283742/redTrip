@@ -8,7 +8,7 @@
 		</template>
 		<template #center>
 			<view class="u-nav-slot">
-				中华年柱
+				土地革命时期
 			</view>
 		</template>
 		
@@ -31,8 +31,8 @@
 </template>
 
 <script setup>
-import MessageBoxleft from '@/components/MessageBox/MessageBoxleft.vue'
-import MessageBoxright from '@/components/MessageBox/MessageBoxright.vue'
+import MessageBoxleft from '@/components/MessageBox3/MessageBoxleft.vue'
+import MessageBoxright from '@/components/MessageBox3/MessageBoxright.vue'
 
 </script>
 

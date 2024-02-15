@@ -55,7 +55,65 @@
 			}
 		},
 		{
+<<<<<<< HEAD
+			"path" : "pages/socialist/socialist",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/Agrarian/Agrarian",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/olddemocracy/olddemocracy",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/party/party",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/liberation/liberation",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/anti-Japanese/anti-Japanese",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/cigarettes/cigarettes",
+=======
 			"path" : "pages/RedMeeting/RedMeeting",
+>>>>>>> 66e9c3d8686f62729d5c4d3444a4d7a2fc8ad46c
 			"style" : 
 			{
 				"navigationBarTitleText" : "",
