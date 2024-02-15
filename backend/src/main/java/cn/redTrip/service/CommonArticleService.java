@@ -13,7 +13,7 @@ public interface CommonArticleService extends IService<CommonArticle> {
 
     CommonResult queryDetail(Integer id);
 
-    CommonResult queryList(Integer type);
+    CommonResult queryList(Integer type,Integer page,Integer size);
 
     CommonResult searchArticle(String keyword);
 }
