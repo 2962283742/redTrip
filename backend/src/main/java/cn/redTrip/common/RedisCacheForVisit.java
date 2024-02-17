@@ -1,5 +1,6 @@
 package cn.redTrip.common;
 
+import cn.redTrip.entity.dto.ArticleVisit;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -25,7 +26,8 @@ public class RedisCacheForVisit {
 
 
 
-    public void setVisit(){
+    public void setVisit(ArticleVisit articleVisit){
+        
 
     }
 

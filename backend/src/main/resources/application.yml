@@ -27,7 +27,7 @@ CustomCache:
   expireTime: 3600000
   preFix: user-
 Visit:
-  expireTime: 60*60*24*30
+  expireTime: 86370000
   preFix: Visit-
 ############## Sa-Token 配置 (文档: https://sa-token.cc) ##############
 sa-token:
