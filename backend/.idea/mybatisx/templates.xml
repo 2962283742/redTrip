@@ -69,8 +69,8 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="CommonArticle" />
-                  <option name="tableName" value="common_article" />
+                  <option name="className" value="Collection" />
+                  <option name="tableName" value="collection" />
                 </TableUIInfo>
               </list>
             </option>

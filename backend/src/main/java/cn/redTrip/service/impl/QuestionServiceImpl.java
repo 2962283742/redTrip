@@ -87,7 +87,7 @@ public class QuestionServiceImpl extends ServiceImpl<QuestionMapper, Question>
     public CommonResult generateRecord(Integer type) {
         UserQuestion userQuestion = new UserQuestion();
         userQuestion.setQuestionType(type);
-        userQuestion.setCreateTime(LocalDateTime.now().withSecond(0).withNano(0));
+//        userQuestion.setCreateTime(LocalDateTime.now().withSecond(0).withNano(0));
         userQuestion.setUserId(UserLocalThread.getThreadLocal());
         userQuestionService.save(userQuestion);
         return CommonResult.success("答题结束");

@@ -10,16 +10,22 @@ import lombok.Data;
 
 /**
  * 
- * @TableName user_question
+ * @TableName collection
  */
-@TableName(value ="user_question")
+@TableName(value ="collection")
 @Data
-public class UserQuestion implements Serializable {
+public class Collection implements Serializable {
     /**
      * 
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id",type = IdType.AUTO)
     private Integer id;
+
+    /**
+     * 
+     */
+    @TableField(value = "articleId")
+    private Integer articleId;
 
     /**
      * 
@@ -32,18 +38,6 @@ public class UserQuestion implements Serializable {
      */
     @TableField(value = "createTime",fill = FieldFill.INSERT)
     private LocalDateTime createTime;
-
-    /**
-     * 
-     */
-    @TableField(value = "questionType")
-    private Integer questionType;
-
-    /**
-     * 
-     */
-    @TableField(value = "userOption")
-    private String userOption;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
@@ -59,12 +53,11 @@ public class UserQuestion implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        UserQuestion other = (UserQuestion) that;
+        Collection other = (Collection) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
+            && (this.getArticleId() == null ? other.getArticleId() == null : this.getArticleId().equals(other.getArticleId()))
             && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
-            && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()))
-            && (this.getQuestionType() == null ? other.getQuestionType() == null : this.getQuestionType().equals(other.getQuestionType()))
-            && (this.getUserOption() == null ? other.getUserOption() == null : this.getUserOption().equals(other.getUserOption()));
+            && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()));
     }
 
     @Override
@@ -72,10 +65,9 @@ public class UserQuestion implements Serializable {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
+        result = prime * result + ((getArticleId() == null) ? 0 : getArticleId().hashCode());
         result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
         result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
-        result = prime * result + ((getQuestionType() == null) ? 0 : getQuestionType().hashCode());
-        result = prime * result + ((getUserOption() == null) ? 0 : getUserOption().hashCode());
         return result;
     }
 
@@ -86,12 +78,13 @@ public class UserQuestion implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
+        sb.append(", articleId=").append(articleId);
         sb.append(", userId=").append(userId);
         sb.append(", createTime=").append(createTime);
-        sb.append(", questionType=").append(questionType);
-        sb.append(", userOption=").append(userOption);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
     }
+
+
 }
