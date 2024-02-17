@@ -35,4 +35,9 @@ public class EnumObject {
      */
 
     public static Integer COLLECTION_ERROR = 454;
+
+    /**
+     * 重复喜欢
+     */
+    public static Integer LIKE_ERROR = 455;
 }
