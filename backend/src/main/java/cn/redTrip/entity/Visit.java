@@ -1,10 +1,10 @@
 package cn.redTrip.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.util.Date;
 import lombok.Data;
 
 /**
@@ -32,6 +32,12 @@ public class Visit implements Serializable {
     @TableField(value = "userId")
     private Integer userId;
 
+    /**
+     * 
+     */
+    @TableField(value = "createTime",fill = FieldFill.INSERT)
+    private LocalDateTime createTime;
+
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 
@@ -49,7 +55,8 @@ public class Visit implements Serializable {
         Visit other = (Visit) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getArticleId() == null ? other.getArticleId() == null : this.getArticleId().equals(other.getArticleId()))
-            && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()));
+            && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
+            && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()));
     }
 
     @Override
@@ -59,6 +66,7 @@ public class Visit implements Serializable {
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getArticleId() == null) ? 0 : getArticleId().hashCode());
         result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
+        result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
         return result;
     }
 
@@ -71,6 +79,7 @@ public class Visit implements Serializable {
         sb.append(", id=").append(id);
         sb.append(", articleId=").append(articleId);
         sb.append(", userId=").append(userId);
+        sb.append(", createTime=").append(createTime);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

@@ -14,9 +14,6 @@
             <result property="type" column="type" jdbcType="TINYINT"/>
             <result property="hot" column="hot" jdbcType="INTEGER"/>
             <result property="view" column="view" jdbcType="INTEGER"/>
-            <result property="collection_status" column="collection_status" jdbcType="BOOLEAN"></result>
-            <result property="like_status" column="like_status" jdbcType="BOOLEAN"></result>
-            <result property="star_status" column="star_status"/>
     </resultMap>
 
     <sql id="Base_Column_List">

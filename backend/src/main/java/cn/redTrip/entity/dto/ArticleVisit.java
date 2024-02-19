@@ -1,7 +1,9 @@
 package cn.redTrip.entity.dto;
 
 import com.baomidou.mybatisplus.annotation.TableField;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
@@ -10,6 +12,8 @@ import java.io.Serializable;
  * @date 2024/2/17 22:29
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ArticleVisit implements Serializable {
 
     @TableField(exist = false)

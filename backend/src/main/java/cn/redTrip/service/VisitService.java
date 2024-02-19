@@ -1,5 +1,6 @@
 package cn.redTrip.service;
 
+import cn.redTrip.entity.CommonResult;
 import cn.redTrip.entity.Visit;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -10,4 +11,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface VisitService extends IService<Visit> {
 
+    CommonResult queryVisit();
+
+    CommonResult addVisit(Integer articleId);
 }
