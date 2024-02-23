@@ -4,7 +4,6 @@
 			<view class="u-nav-slot">
 				&lt;
 			</view>
-			
 		</template>
 		<template #center>
 			<view class="u-nav-slot">
@@ -22,20 +21,14 @@
 
 	<view>
 	
-	
+
 	</view>
-	<MessageBoxleft></MessageBoxleft>
-	<MessageBoxright></MessageBoxright>
-	
-	
+	<MessageBox></MessageBox>
 </template>
 
 <script setup>
-import MessageBoxleft from '@/components/MessageBox/MessageBoxleft.vue'
-import MessageBoxright from '@/components/MessageBox/MessageBoxright.vue'
-
+import MessageBox from '@/components/MessageBox/MessageBox.vue'
 </script>
-
 
 <style lang="scss">
 page{
@@ -47,8 +40,6 @@ page{
 }
 .u-navbar .u-nav-slot{
 	color: white;
-	font-size: 15px;
+	font-size: 20px;
 }
 </style>
-
-

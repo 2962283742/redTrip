@@ -1,8 +1,10 @@
 package cn.redTrip.service.impl;
 
+import cn.redTrip.common.RedisCacheForVisit;
 import cn.redTrip.common.UserLocalThread;
 import cn.redTrip.entity.CommonResult;
 import cn.redTrip.entity.dto.CommonArticleVo;
+import cn.redTrip.service.VisitService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -33,10 +35,14 @@ public class CommonArticleServiceImpl extends ServiceImpl<CommonArticleMapper, C
     @Resource
     private CommonArticleService commonArticleService;
 
+    @Resource
+    private VisitService visitService;
+
 
     @Override
     public CommonResult queryDetail(Integer id) {
         commonArticleMapper.updateArticleHotAndView(id);
+        visitService.addVisit(id);
         CommonArticle commonArticle = commonArticleMapper.queryDetail(id,UserLocalThread.getThreadLocal());
         return CommonResult.success(commonArticle);
     }
