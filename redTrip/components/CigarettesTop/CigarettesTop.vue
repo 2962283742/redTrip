@@ -26,9 +26,10 @@
 </template>
 
 <script>
+	name:"CigarettesTop"
 </script>
 
-<style>
+<style lang="scss">
 .title{
 	    margin:10px; /* 设置上、右、下、左四个方向的外边距为10像素 */
 	    background-color: rgba(0, 0, 0, 0.3); 

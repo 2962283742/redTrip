@@ -82,7 +82,7 @@
 	flex-direction: row-reverse;
 	align-items: center;
 	margin-top: 150px;
-	transform: translateX(0px);
+	transform: translateX(-10px);
 }
 .messageE{
 	background-color: white;
@@ -112,7 +112,7 @@
 	flex-direction: row-reverse;
 	align-items: center;
 	margin-top: 100px;
-	transform: translateX(0px);
+	transform: translateX(-10px);
 }
 .messageF{
 	background-color: white;
@@ -150,7 +150,7 @@
   position: absolute;
   top: 0px;
   left: 50%;
-  transform: translateX(60%);
+  transform: translateX(70%);
   padding: 2px;
   font-size: 10px;
   color: white;
@@ -160,7 +160,7 @@
   position: absolute;
   top: 10px;
   left: 50%;
-  transform: translateX(60%);
+  transform: translateX(70%);
   padding: 2px;
   font-size: 10px;
   color: white;

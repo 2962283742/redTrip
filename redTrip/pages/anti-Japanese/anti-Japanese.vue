@@ -33,8 +33,8 @@
 </template>
 
 <script setup>
-import MessageBoxleft from '@/components/MessageBox7/MessageBoxleft.vue'
-import MessageBoxright from '@/components/MessageBox7/MessageBoxright.vue'
+import MessageBoxleft from '@/components/MessageBox/MessageBox7/MessageBoxleft.vue'
+import MessageBoxright from '@/components/MessageBox/MessageBox7/MessageBoxright.vue'
 
 </script>
 

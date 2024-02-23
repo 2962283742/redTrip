@@ -1,48 +1,52 @@
 <template>
-  <u-scroll-view style="height: 100vh;">
-    <u-navbar @rightClick="rightClick" safeAreaInsetTop :autoBack="true" bgColor="gray" placeholder>
-      <template #left>
+  <u-scroll-view>
+    <u-navbar @rightClick="rightClick" safeAreaInsetTop :autoBack="true" bgColor="rgba(221, 221, 221, 1)" placeholder>
+      <template #left>                         
         <view class="u-nav-slot-left">
           &lt;
         </view>
       </template>
       <template #center>
         <view class="u-nav-slot">
-          LOGO
+          重要会议
         </view>
       </template>
       <template #right>
         <view class="u-nav-slot">
-          <u-icon size="40" name="share-square" color="white"></u-icon>
+          <u-icon size="40" name="share-square" color="rgba(135, 135, 135, 1)"></u-icon>
         </view>
       </template>
     </u-navbar>
 
     <view>
+     
     </view>
 
-    <CigarettesTop></CigarettesTop>
+    <meeting></meeting>
+	
   </u-scroll-view>
 </template>
 
 <script setup>
-import CigarettesTop from '@/components/CigarettesTop/CigarettesTop.vue'
+import meeting from '@/components/Longmarch/meeting.vue'
 </script>
 
 <style lang="scss">
-page {
+page { 
   background-color: rgb(204, 204, 204);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .u-navbar .u-nav-slot {
-  color: white;
+  color: black;
   font-size: 18px;
 }
 
 .u-nav-slot-left {
-  color: white;
+  color: rgba(135, 135, 135, 1);
   font-size: 30px;
 }
+
+
 </style>

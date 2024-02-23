@@ -49,7 +49,7 @@
   flex-direction: row;
   align-items: center;
   margin-top: 90px;
-  transform: translateX(0px);
+  transform: translateX(10px);
 }
 
 .messageA {
@@ -82,7 +82,7 @@
 	flex-direction: row;
 	align-items: center;
 	margin-top: 200px;
-	transform: translateX(0px);
+	transform: translateX(10px);
 }
 .messageB {
 	background-color: white;
@@ -112,7 +112,7 @@
 	flex-direction: row;
 	align-items: center;
 	margin-top: 60px;
-	transform: translateX(0px);
+	transform: translateX(10px);
 	
 }
 .messageC {
@@ -141,7 +141,7 @@
   position: absolute;
   top: 0px;
   left: 50%;
-  transform: translateX(-165%);
+  transform: translateX(-170%);
   padding: 2px;
   font-size: 10px;
   color: white;
@@ -151,7 +151,7 @@
   position: absolute;
   top: 0px;
   left: 50%;
-  transform: translateX(-165%);
+  transform: translateX(-170%);
   padding: 2px;
   font-size: 10px;
   color: white;
@@ -161,7 +161,7 @@
   position: absolute;
   top: 0px;
   left: 50%;
-  transform: translateX(-165%);
+  transform: translateX(-170%);
   padding: 2px;
   font-size: 10px;
   color: white;

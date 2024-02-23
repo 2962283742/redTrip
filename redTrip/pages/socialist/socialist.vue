@@ -1,4 +1,5 @@
 <template>
+	 <u-scroll-view>
 	<u-navbar  @rightClick="rightClick" safeAreaInsetTop :autoBack="true" bgColor="rgba(0, 0, 0,0.3)" placeholder>
 		<template #left>
 			<view class="u-nav-slot">
@@ -28,12 +29,12 @@
 	</view>
 	<MessageBoxleft></MessageBoxleft>
 	<MessageBoxright></MessageBoxright>
-	
+</u-scroll-view>
 </template>
 
 <script setup>
-import MessageBoxleft from '@/components/MessageBox2/MessageBoxleft.vue'
-import MessageBoxright from '@/components/MessageBox2/MessageBoxright.vue'
+import MessageBoxleft from '@/components/MessageBox/MessageBox2/MessageBoxleft.vue'
+import MessageBoxright from '@/components/MessageBox/MessageBox2/MessageBoxright.vue'
 
 </script>
 
@@ -49,7 +50,7 @@ import MessageBoxright from '@/components/MessageBox2/MessageBoxright.vue'
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(0deg) saturate(5000%);
+  
 }
 
 .background1 {

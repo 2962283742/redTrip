@@ -34,8 +34,8 @@
 </template>
 
 <script setup>
-import MessageBoxleft from '@/components/MessageBox4/MessageBoxleft.vue'
-import MessageBoxright from '@/components/MessageBox4/MessageBoxright.vue'
+import MessageBoxleft from '@/components/MessageBox/MessageBox4/MessageBoxleft.vue'
+import MessageBoxright from '@/components/MessageBox/MessageBox4/MessageBoxright.vue'
 
 </script>
 

@@ -1,4 +1,5 @@
 <template>
+	
 	<u-navbar  @rightClick="rightClick" safeAreaInsetTop :autoBack="true" bgColor="rgba(0, 0, 0,0.3)" placeholder>
 		<template #left>
 			<view class="u-nav-slot">
@@ -27,12 +28,11 @@
 	<MessageBoxleft></MessageBoxleft>
 	<MessageBoxright></MessageBoxright>
 	
-	
 </template>
 
 <script setup>
-import MessageBoxleft from '@/components/MessageBox/MessageBoxleft.vue'
-import MessageBoxright from '@/components/MessageBox/MessageBoxright.vue'
+import MessageBoxleft from '@/components/MessageBox/MessageBox1/MessageBoxleft.vue'
+import MessageBoxright from '@/components/MessageBox/MessageBox1/MessageBoxright.vue'
 
 </script>
 
