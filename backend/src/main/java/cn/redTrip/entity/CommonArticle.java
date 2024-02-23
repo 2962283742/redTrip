@@ -78,6 +78,13 @@ public class CommonArticle implements Serializable {
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 
+    @TableField(exist = false)
+    private boolean starStatus;
+    @TableField(exist = false)
+    private boolean likeStatus;
+    @TableField(exist = false)
+    private boolean collectionStatus;
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {

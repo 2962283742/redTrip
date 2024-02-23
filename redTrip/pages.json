@@ -118,6 +118,7 @@
 			}
 		},
 		{
+<<<<<<< HEAD
 			"path" : "pages/RedMeeting/RedMeeting",
 			"style" : 
 			{
@@ -242,6 +243,14 @@
 						"enablePullDownRefresh" : false,
 						"navigationStyle": "custom"
 					}
+=======
+			"path" : "pages/Test/Test",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+>>>>>>> 621610ebe7d67ed0bd4f20b1adb72821dc1c5c6e
 		}
 
 	],

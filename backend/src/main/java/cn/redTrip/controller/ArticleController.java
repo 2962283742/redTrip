@@ -27,8 +27,8 @@ public class ArticleController {
     }
 
     @GetMapping("/list")
-    public CommonResult queryList(@RequestParam("type") Integer type){
-        return commonArticleService.queryList(type);
+    public CommonResult queryList(@RequestParam("type") Integer type,@RequestParam("page") Integer page,@RequestParam("size") Integer size){
+        return commonArticleService.queryList(type,page,size);
     }
 
     @PostMapping("/search")

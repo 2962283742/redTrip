@@ -3,13 +3,12 @@ package cn.redTrip.exceptionHandler;
 import cn.redTrip.entity.CommonResult;
 import cn.redTrip.entity.EnumObject;
 
+import cn.redTrip.exceptions.CollectionException;
+import cn.redTrip.exceptions.LikeException;
 import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.sql.SQLIntegrityConstraintViolationException;
 
 /**
  * @author dzl
@@ -31,6 +30,17 @@ public class GlobalExceptionHandler {
         return CommonResult.fail("手机号重复注册",EnumObject.NUMBER_ERROR);
     }
 
+
+    @ExceptionHandler(CollectionException.class)
+    public CommonResult collectionExceptionHandler(CollectionException collectionException){
+        return CommonResult.fail("重复收藏",EnumObject.COLLECTION_ERROR);
+    }
+
+
+    @ExceptionHandler(LikeException.class)
+    public CommonResult likeExceptionHandler(LikeException likeException){
+        return CommonResult.fail("重复喜欢",EnumObject.LIKE_ERROR);
+    }
 
 
 }

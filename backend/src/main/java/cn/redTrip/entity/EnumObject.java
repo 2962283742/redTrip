@@ -28,4 +28,16 @@ public class EnumObject {
      * 手机号重复注册
      * **/
     public static Integer NUMBER_ERROR = 453;
+
+
+    /**
+     * 重复收藏
+     */
+
+    public static Integer COLLECTION_ERROR = 454;
+
+    /**
+     * 重复喜欢
+     */
+    public static Integer LIKE_ERROR = 455;
 }

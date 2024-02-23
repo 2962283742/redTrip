@@ -18,15 +18,15 @@
 		<view class="userLogin">
 			<view class="usernameLabel">
 				<text>手机号码</text>
-				<u-input border="bottom" v-model="value" clearable font-size="25"></u-input>
+				<u-input border="bottom" v-model="user.number" clearable font-size="25"></u-input>
 			</view>
 			<view class="passwordLabel">
 				<text>密码</text>
-				<u-input border="bottom" v-model="value" type="password" clearable font-size="25"></u-input>
+				<u-input border="bottom" v-model="user.password" type="password" clearable font-size="25"></u-input>
 			</view>
 			<view class="buttonArea">
 				<view>
-					<u-button>登录</u-button>
+					<u-button @click="login">登录</u-button>
 				</view>
 
 				<view>
@@ -49,11 +49,24 @@
 	import {
 		ref
 	} from 'vue';
+	import { userLogin } from '@/request/api.js'
 	//这个src到时候是要改的，暂时用一下
 	const src = ref('https://cdn.uviewui.com/uview/album/1.jpg');
+	const user = ref({
+		number:'',
+		password:''
+	})
 	/*
 	这个函数用来跳转到注册页面，用navigateTo防止关闭当前页面，因为后续注册可能没注册，还要返回当前页面
 	*/
+   const login =()=>{
+	   userLogin(user.value).then(res=>{
+		   console.log(res.data.tokenValue);
+		   uni.setStorageSync("Token",res.data.tokenValue)
+			console.log(uni.getStorageSync("Token"));
+	   })
+   }
+   
 	const registerJump = ()=>{
 		uni.navigateTo({
 			url:'/pages/Register/Register',

@@ -14,6 +14,11 @@ public class CommonArticleVo {
     private Integer star;
     private Integer hot;
     private Integer view;
+    private boolean starStatus;
+
+    private boolean likeStatus;
+
+    private boolean collectionStatus;
 
 
 }

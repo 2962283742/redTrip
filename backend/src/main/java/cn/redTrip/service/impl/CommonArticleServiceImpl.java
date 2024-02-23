@@ -1,5 +1,6 @@
 package cn.redTrip.service.impl;
 
+import cn.redTrip.common.UserLocalThread;
 import cn.redTrip.entity.CommonResult;
 import cn.redTrip.entity.dto.CommonArticleVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -36,21 +37,20 @@ public class CommonArticleServiceImpl extends ServiceImpl<CommonArticleMapper, C
     @Override
     public CommonResult queryDetail(Integer id) {
         commonArticleMapper.updateArticleHotAndView(id);
-        CommonArticle commonArticle = commonArticleMapper.queryDetail(id);
+        CommonArticle commonArticle = commonArticleMapper.queryDetail(id,UserLocalThread.getThreadLocal());
         return CommonResult.success(commonArticle);
     }
 
     @Override
-    public CommonResult queryList(Integer type) {
+    public CommonResult queryList(Integer type,Integer page,Integer size) {
 
+        Integer offset = (page - 1) * size;
 
-        LambdaQueryWrapper<CommonArticle> commonArticleLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        commonArticleLambdaQueryWrapper.eq(CommonArticle::getType,type);
-        Page<CommonArticle> commonArticlePage = new Page<>();
-        commonArticleMapper.selectPage(commonArticlePage,commonArticleLambdaQueryWrapper);
+        List<CommonArticle> commonArticles = commonArticleMapper.queryList(UserLocalThread.getThreadLocal(), 0, size, offset);
+
 
         ArrayList<CommonArticleVo> commonArticleVos = new ArrayList<>();
-        for (CommonArticle a:commonArticlePage.getRecords()
+        for (CommonArticle a:commonArticles
              ) {
             CommonArticleVo commonArticleVo = new CommonArticleVo();
             BeanUtils.copyProperties(a,commonArticleVo);

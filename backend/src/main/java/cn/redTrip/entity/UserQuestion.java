@@ -1,9 +1,7 @@
 package cn.redTrip.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -32,7 +30,7 @@ public class UserQuestion implements Serializable {
     /**
      * 
      */
-    @TableField(value = "createTime")
+    @TableField(value = "createTime",fill = FieldFill.INSERT)
     private LocalDateTime createTime;
 
     /**
