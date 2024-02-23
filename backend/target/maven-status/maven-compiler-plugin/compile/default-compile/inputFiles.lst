@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\common\RedisCacheForVisit.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\controller\ArticleController.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\entity\dto\CommonArticleVo.java
@@ -65,3 +66,36 @@ C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\mapper\UserMappe
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\service\impl\ReviewServiceImpl.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\service\CollectionService.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\mapper\QuestionMapper.java
+=======
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\mapper\UserQuestionMapper.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\service\UserQuestionService.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\entity\UserQuestion.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\service\impl\CommonArticleServiceImpl.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\common\UserLocalThread.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\entity\Question.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\exceptionHandler\GlobalExceptionHandler.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\controller\UserMangerController.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\config\RedisConfig.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\mapper\CommonArticleMapper.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\mapper\UserMapper.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\service\impl\UserServiceImpl.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\controller\ArticleController.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\entity\dto\UserVo.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\entity\CommonArticle.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\service\QuestionService.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\handler\GlobalHandler.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\ApplicationMain.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\config\MybatisPlusConfig.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\controller\QuestionController.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\service\CommonArticleService.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\service\impl\QuestionServiceImpl.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\config\CorsConfig.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\entity\CommonResult.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\service\impl\UserQuestionServiceImpl.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\entity\dto\QuestionVo.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\mapper\QuestionMapper.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\entity\dto\CommonArticleVo.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\entity\User.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\entity\EnumObject.java
+H:\Desktop\redTrip\redTrip\backend\src\main\java\cn\redTrip\service\UserService.java
+>>>>>>> 554f96074fd6f987ceb721a28ff78cc5e5d86d2a

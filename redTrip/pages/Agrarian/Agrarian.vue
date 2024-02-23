@@ -1,14 +1,14 @@
 <template>
-	
 	<u-navbar  @rightClick="rightClick" safeAreaInsetTop :autoBack="true" bgColor="rgba(0, 0, 0,0.3)" placeholder>
 		<template #left>
 			<view class="u-nav-slot">
 				&lt;
 			</view>
+			
 		</template>
 		<template #center>
 			<view class="u-nav-slot">
-				中华年柱
+				土地革命时期
 			</view>
 		</template>
 		
@@ -22,26 +22,20 @@
 
 	<view>
 	
-
+	
 	</view>
-<<<<<<< HEAD
-	<MessageBox></MessageBox>
-</template>
-
-<script setup>
-import MessageBox from '@/components/MessageBox/MessageBox.vue'
-=======
 	<MessageBoxleft></MessageBoxleft>
 	<MessageBoxright></MessageBoxright>
+	
 	
 </template>
 
 <script setup>
-import MessageBoxleft from '@/components/MessageBox/MessageBox1/MessageBoxleft.vue'
-import MessageBoxright from '@/components/MessageBox/MessageBox1/MessageBoxright.vue'
+import MessageBoxleft from '@/components/MessageBox/MessageBox3/MessageBoxleft.vue'
+import MessageBoxright from '@/components/MessageBox/MessageBox3/MessageBoxright.vue'
 
->>>>>>> 554f96074fd6f987ceb721a28ff78cc5e5d86d2a
 </script>
+
 
 <style lang="scss">
 page{
@@ -53,6 +47,8 @@ page{
 }
 .u-navbar .u-nav-slot{
 	color: white;
-	font-size: 20px;
+	font-size: 15px;
 }
 </style>
+
+
