@@ -55,74 +55,6 @@
 			}
 		},
 		{
-<<<<<<< HEAD
-			"path" : "pages/RedMeeting/RedMeeting",
-=======
-			"path" : "pages/socialist/socialist",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Agrarian/Agrarian",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/olddemocracy/olddemocracy",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/party/party",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/liberation/liberation",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/anti-Japanese/anti-Japanese",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/cigarettes/cigarettes",
->>>>>>> 554f96074fd6f987ceb721a28ff78cc5e5d86d2a
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-<<<<<<< HEAD
 			"path" : "pages/RedMeeting/RedMeeting",
 			"style" : 
 			{
@@ -132,129 +64,28 @@
 			}
 		},
 		{
-			"path" : "pages/Longmarch/Longmarch",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Longmarch/Development",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Longmarch/meeting",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Longmarch/backdrop",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Longmarch/route",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Longmarch/origin",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Longmarch/Development/Preparatory",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Longmarch/Development/Loseout",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Longmarch/Development/Turnaround",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Longmarch/Development/Northsouth",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Longmarch/Development/Setback",
-			"style" : 
-			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false,
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path" : "pages/Newjourney/Newjourney",
-					"style" : 
-					{
-						"navigationBarTitleText" : "",
-						"enablePullDownRefresh" : false,
-						"navigationStyle": "custom"
-					}
-		},
-		{
-			"path" : "pages/Newjourney/IP",
-					"style" : 
-					{
-						"navigationBarTitleText" : "",
-						"enablePullDownRefresh" : false,
-						"navigationStyle": "custom"
-					}
-=======
 			"path" : "pages/Test/Test",
 			"style" : 
 			{
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : false
 			}
->>>>>>> 621610ebe7d67ed0bd4f20b1adb72821dc1c5c6e
+		},
+		{
+			"path" : "pages/ArticleWithReview/ArticleWithReview",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/ArticleWithoutReview/ArticleWithoutReview",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
 		}
 
 	],
