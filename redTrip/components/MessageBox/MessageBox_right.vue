@@ -1,19 +1,21 @@
 <template>
 	<view class="messageBox">
-		<view class="message">
-			夺取新民主主义革命的胜利
+		<view class="Cricle">
+			
 		</view>
 		<view class="lineWithoutCricle">
 			
 		</view>
-		<view class="Cricle">
-			
+		<view class="message">
+			夺取新民主主义革命的胜利
 		</view>
+		
+		
 	</view>
 </template>
 
 <script setup>
-	name:"MessageBox"
+	name:"MessageBox_right"
 	
 	// export default {
 	// 	name:"MessageBox",
@@ -35,7 +37,7 @@
 }
 .message{
 	background-color: white;
-	width: 20%;
+	width: 70%;
 	text-align: center;
 	border-radius: 4%;
 	padding: 3%;

@@ -86,6 +86,52 @@
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : false
 			}
+		},
+		{
+			"path" : "pages/OwnInfo/OwnInfo",
+			"style" : 
+			{
+				"navigationBarTitleText" : "个人资料",
+				"enablePullDownRefresh" : false,
+				"navigationBarBackgroundColor": "#ffffff"
+				
+			}
+		},
+		{
+			"path" : "pages/VisitRecord/VisitRecord",
+			"style" : 
+			{
+				"navigationBarTitleText" : "浏览记录",
+				"enablePullDownRefresh" : false,
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		},
+		{
+			"path" : "pages/Setting/Setting",
+			"style" : 
+			{
+				"navigationBarTitleText" : "设置",
+				"enablePullDownRefresh" : false,
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		},
+		{
+			"path" : "pages/MyCollection/MyCollection",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的收藏",
+				"enablePullDownRefresh" : false,
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		},
+		{
+			"path" : "pages/MyLike/MyLike",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的喜欢",
+				"enablePullDownRefresh" : false,
+				"navigationBarBackgroundColor": "#ffffff"
+			}
 		}
 
 	],
