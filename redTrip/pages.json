@@ -132,6 +132,24 @@
 				"enablePullDownRefresh" : false,
 				"navigationBarBackgroundColor": "#ffffff"
 			}
+		},
+		{
+			"path" : "pages/WaterFallPage/WaterFallPage",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/ArticleDetail/ArticleDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
 		}
 
 	],

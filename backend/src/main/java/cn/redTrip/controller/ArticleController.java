@@ -22,7 +22,7 @@ public class ArticleController {
 
 
     @GetMapping("/detail")
-    public CommonResult queryDetail(@RequestParam("id") Integer id){
+    public CommonResult queryDetail(@RequestParam("id") Integer id) throws InterruptedException {
         return commonArticleService.queryDetail(id);
     }
 

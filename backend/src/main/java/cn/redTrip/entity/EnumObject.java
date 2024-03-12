@@ -40,4 +40,11 @@ public class EnumObject {
      * 重复喜欢
      */
     public static Integer LIKE_ERROR = 455;
+
+
+    /**
+     * 数据库无数据
+     */
+
+    public static Integer UN_DATA = 456;
 }

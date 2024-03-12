@@ -11,7 +11,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface CommonArticleService extends IService<CommonArticle> {
 
-    CommonResult queryDetail(Integer id);
+    CommonResult queryDetail(Integer id) throws InterruptedException;
 
     CommonResult queryList(Integer type,Integer page,Integer size);
 
