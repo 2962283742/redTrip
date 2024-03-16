@@ -39,7 +39,7 @@ public class RedisCacheForVisit {
         redisTemplate.opsForList().remove(visitPreFix,0,articleVisit);
         redisTemplate.opsForList().leftPush(visitPreFix,articleVisit);
         redisTemplate.opsForList().trim(visitPreFix,0,9);
-        visitMapper.addVisit(articleVisit.getArticleId(),6,LocalDateTime.now().withSecond(0).withNano(0));
+        visitMapper.addVisit(articleVisit.getArticleId(),UserLocalThread.getThreadLocal(),LocalDateTime.now().withSecond(0).withNano(0));
 
 
 

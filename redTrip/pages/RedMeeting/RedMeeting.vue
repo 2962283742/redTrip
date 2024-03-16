@@ -24,9 +24,12 @@
 	<view class="content">
 		<view class="swiper">
 			
-			<u-swiper :list="list2" keyName="image" showTitle :autoplay="false" indicator indicatorMode="dot" indicatorActiveColor="rgb(255, 191, 0)" circular radius="10" height="200px"></u-swiper>
+			<u-swiper :list="list2" keyName="image" showTitle :autoplay="false" indicator indicatorMode="dot" indicatorActiveColor="rgb(255, 191, 0)" circular radius="10" height="200px" imgMode="scaleToFill"></u-swiper>
 		</view>
 		<view class="meetingArticle">
+			<MeetingComponent></MeetingComponent>
+			<MeetingComponent></MeetingComponent>
+			<MeetingComponent></MeetingComponent>
 			<MeetingComponent></MeetingComponent>
 		</view>
 	</view>
