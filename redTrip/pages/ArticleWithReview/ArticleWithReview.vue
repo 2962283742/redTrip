@@ -1,17 +1,12 @@
 <template>
 	<view>
-		
+		{{a}}
 	</view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				
-			};
-		}
-	}
+	import { ref } from 'vue'
+	const a = ref('qqqqq')
 </script>
 
 <style lang="scss">
