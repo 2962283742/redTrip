@@ -134,7 +134,11 @@
 			}
 		},
 		{
+<<<<<<< HEAD
+			"path" : "pages/ArticleWithoutReview/Longmarch",
+=======
 			"path" : "pages/WaterFallPage/WaterFallPage",
+>>>>>>> f5fc628dc687766b0d65e0d70a5b99d6774669da
 			"style" : 
 			{
 				"navigationBarTitleText" : "",
@@ -143,13 +147,119 @@
 			}
 		},
 		{
+<<<<<<< HEAD
+			"path" : "pages/ArticleWithoutReview/Development",
+=======
 			"path" : "pages/ArticleDetail/ArticleDetail",
+>>>>>>> f5fc628dc687766b0d65e0d70a5b99d6774669da
 			"style" : 
 			{
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : false,
 				"navigationStyle": "custom"
 			}
+<<<<<<< HEAD
+		},
+		{
+			"path" : "pages/ArticleWithoutReview/meeting",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/ArticleWithReview/backdrop",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/ArticleWithReview/route",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/ArticleWithReview/origin",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/ArticleWithReview/Preparatory",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/ArticleWithReview/Loseout",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/ArticleWithReview/Turnaround",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/ArticleWithReview/Northsouth",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/ArticleWithReview/Setback",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/ArticleWithoutReview/Newjourney",
+					"style" : 
+					{
+						"navigationBarTitleText" : "",
+						"enablePullDownRefresh" : false,
+						"navigationStyle": "custom"
+					}
+		},
+		{
+			"path" : "pages/ArticleWithReview/IP",
+					"style" : 
+					{
+						"navigationBarTitleText" : "",
+						"enablePullDownRefresh" : false,
+						"navigationStyle": "custom"
+					}
+=======
+>>>>>>> f5fc628dc687766b0d65e0d70a5b99d6774669da
 		}
 
 	],
