@@ -66,23 +66,17 @@ public class CommonArticleServiceImpl extends ServiceImpl<CommonArticleMapper, C
 
 
     @Override
-    public CommonResult queryDetail(Integer id) throws InterruptedException {
+    public CommonResult queryDetail(Integer id){
 
-        if (id<=0){
-            return CommonResult.fail("数据库无数据", EnumObject.UN_DATA);
-        }
-        CommonArticle commonArticle = redisTemplate.opsForValue().get(preFix + id);
-        if (ObjectUtils.isEmpty(commonArticle)){
-
-                commonArticleMapper.updateArticleHotAndView(id);
-                visitService.addVisit(id);
-                commonArticle = commonArticleMapper.queryDetail(id,UserLocalThread.getThreadLocal());
-                long rangeLong = min + (((long) (new Random().nextDouble() * (max - min))));
-                redisTemplate.opsForValue().set(preFix+commonArticle.getArticleId(),commonArticle,expireTime+rangeLong, TimeUnit.SECONDS);
-
+        CommonArticle commonArticle = (CommonArticle)this.redisTemplate.opsForValue().get(this.preFix + id);
+        if (ObjectUtils.isEmpty(commonArticle)) {
+            commonArticle = (CommonArticle)this.commonArticleService.getById(id);
+            this.redisTemplate.opsForValue().set(this.preFix + id, commonArticle, this.expireTime, TimeUnit.SECONDS);
         }
 
         return CommonResult.success(commonArticle);
+
+
     }
 
     @Override
