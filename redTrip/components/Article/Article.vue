@@ -6,7 +6,7 @@
 					height="100px" radius="10"></u-image>
 			</u-col>
 			<u-col span="7" offset="1">
-				<u-text text="【探索推荐】习总书记：继续把党史总结学习教育宣传引向深入 更好把握和运用党的百年奋斗历史经验" lines="3"></u-text>
+				<u-text text="【探索推荐】习总书记：以史为鉴、开创未来 埋头苦干、勇毅前行" lines="3"></u-text>
 			</u-col>
 		</u-row>
 		
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-	
+	name:"Article"
 </script>
 
 <style>

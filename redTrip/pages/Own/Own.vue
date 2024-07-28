@@ -80,12 +80,14 @@
 			</view>
 		</view>
 	</view>
+	<Navigation></Navigation>
 </template>
 
 <script setup>	
 	import {
 		ref
 	} from 'vue'
+	import Navigation from '@/components/Navigation/Navigation.vue'
 	const src = ref('https://q1.qlogo.cn/g?b=qq&nk=3198841971&s=100')
 	
 	

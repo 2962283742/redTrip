@@ -1,13 +1,15 @@
 <template>
 	<view class="messageBox">
-		<view class="Cricle">
-			
+		
+		
+		<view class="message">
+			掀起土地改革的风暴
 		</view>
 		<view class="lineWithoutCricle">
 			
 		</view>
-		<view class="message">
-			夺取新民主主义革命的胜利
+		<view class="Cricle">
+			
 		</view>
 		
 		
@@ -15,16 +17,8 @@
 </template>
 
 <script setup>
-	name:"MessageBox_right"
+	name:"MessageBox_left2"
 	
-	// export default {
-	// 	name:"MessageBox",
-	// 	data() {
-	// 		return {
-				
-	// 		};
-	// 	}
-	// }
 </script>
 
 <style lang="scss">
@@ -52,7 +46,7 @@
 .Cricle{
 	border-radius: 50%;
 	height: 15px;
-	background-color: blue;
+	background-color: red;
 	width: 15px;
 	border: 2px solid white;
 }

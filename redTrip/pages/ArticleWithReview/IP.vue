@@ -36,7 +36,7 @@ import Review3 from '@/components/Review/Review3.vue'
 
 <style lang="scss">
 page { 
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -47,9 +47,12 @@ page {
 }
 
 .u-nav-slot-left {
-  color: rgba(135, 135, 135, 1);
+  color: rgba(0, 0, 0, 1.0);
   font-size: 30px;
 }
 
+.filtered-image1 {
+    filter: brightness(0%) saturate(0%);
+}
 
 </style>

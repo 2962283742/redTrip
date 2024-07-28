@@ -102,7 +102,7 @@ button {
 }
 
 button:hover {
-  background-color:rgba(153, 153, 153, 1);
+  background-color:rgba(0, 0, 0, 1.0);
 }
   
 .search-container {

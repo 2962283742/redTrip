@@ -1,5 +1,5 @@
 <template>
-	 <img src="/static/Longmarch/1.jpg" class="title-image" />
+	 <img src="https://img.js.design/assets/img/65af5a24b744bbb6e66335a9.jpg" class="title-image" />
 	 <h2>坚持北上和南下分裂阶段</h2>
 	 <view class="content">
 		 <p>
@@ -54,7 +54,7 @@ p{
 }
 .title-image {
 	  width: 100%; 
-	  height: 150px; 
+	  height: 200px; 
 	  margin: 0%;
 	}
 	

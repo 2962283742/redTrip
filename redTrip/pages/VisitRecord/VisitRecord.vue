@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-	import Article from '@/components/Article.vue'
+	import Article from '@/components/Article/Article.vue'
 	
 </script>
 
@@ -17,6 +17,7 @@ page{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 65px; /* 使填充量大于或等于导航栏的高度 */
 }
 .content{
 	display: flex;

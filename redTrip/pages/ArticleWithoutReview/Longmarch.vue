@@ -1,11 +1,13 @@
 <template>
   <u-scroll-view>
-    <u-navbar @rightClick="rightClick" safeAreaInsetTop :autoBack="true" bgColor="rgba(221, 221, 221, 1)" placeholder>
-      <template #left>                         
-        <view class="u-nav-slot-left">
-          &lt;
-        </view>
-      </template>
+    <u-navbar @rightClick="rightClick" safeAreaInsetTop :autoBack="true" bgColor="rgba(255, 255, 255, 1.0)" placeholder>
+     <template #left>
+     	<view class="u-nav-slot">
+     		<u-image :show-loading="true" src="../../static/redMetting/left.png" width="20px"
+     			height="30px" class="filtered-image1"></u-image>
+     	</view>
+     </template>
+	 
       <template #center>
         <view class="u-nav-slot">
           漫漫长征
@@ -28,12 +30,12 @@
 </template>
 
 <script setup>
-import Longmarch from '@/components/Longmarch/Longmarch.vue'
+import Longmarch from '@/components/Longmarch/Longmarch.vue' 
 </script>
 
 <style lang="scss">
 page { 
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -42,6 +44,12 @@ page {
   color: black;
   font-size: 18px;
 }
+
+
+.filtered-image1 {
+    filter: brightness(0%) saturate(0%);
+}
+
 
 .u-nav-slot-left {
   color: rgba(135, 135, 135, 1);

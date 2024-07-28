@@ -1,5 +1,5 @@
 <template>
-	 <img src="/static/Longmarch/1.jpg" class="title-image" />
+	 <img src="https://img.js.design/assets/img/65ae096296c3ad9a149fa372.jpg" class="title-image" />
 	 <h2>长征由来</h2>
 	 <view class="content">
 		 <p>
@@ -54,7 +54,7 @@ p{
 }
 .title-image {
 	  width: 100%; 
-	  height: 150px; 
+	  height: 200px; 
 	  margin: 0%;
 	}
 	
