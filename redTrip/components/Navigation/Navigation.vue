@@ -10,7 +10,7 @@
       <view class="word">遗迹</view>
     </view>
     
-    <view class="icon">
+    <view class="icon" @click="handleH5Click">
       <img src="/static/Navigation/red.png" alt="red icon" class="icon-image2">
     </view>
     
@@ -70,6 +70,20 @@ const handleOwnClick = () => {
   uni.navigateTo({
     url: '/pages/Own/Own'
   });
+};
+
+const handleH5Click = () => {  
+  // 判断当前是否为 H5 环境  
+  if (process.env.UNI_PLATFORM === 'h5') {  
+    // 在 H5 环境下，使用 window.location.href 跳转到外部链接  
+    window.location.href = 'https://u.eqxiu.com/s/4CxW7zdm?eip=true';  
+  } else {  
+    // 在其他环境下，考虑给出提示或者执行其他逻辑  
+    uni.showToast({  
+      title: '该功能仅支持在 H5 环境下使用',  
+      icon: 'none'  
+    });   
+  }  
 };
 </script>
 
