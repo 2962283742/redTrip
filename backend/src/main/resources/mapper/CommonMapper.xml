@@ -16,4 +16,5 @@
         id,avatar,avatarType,
         title,createTime
     </sql>
+
 </mapper>

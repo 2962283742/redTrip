@@ -17,6 +17,7 @@ C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\service\Question
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\mapper\UserQuestionMapper.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\service\impl\UserServiceImpl.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\entity\dto\ArticleVisit.java
+C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\controller\StarCollectionLikeController.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\entity\dto\ReviewDto.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\controller\VisitController.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\mapper\CommonMapper.java
@@ -54,7 +55,6 @@ C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\service\impl\Com
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\common\MyMetaObject.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\controller\CollectionController.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\controller\QuestionController.java
-C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\controller\ThreadController.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\controller\CommonController.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\entity\Review.java
 C:\Users\29622\Desktop\redTrip\backend\src\main\java\cn\redTrip\exceptionHandler\GlobalExceptionHandler.java

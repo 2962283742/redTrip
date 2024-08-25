@@ -26,7 +26,6 @@ cn\redTrip\service\CommonArticleService.class
 cn\redTrip\service\ReviewUserService.class
 cn\redTrip\entity\Question.class
 cn\redTrip\exceptions\CollectionException.class
-cn\redTrip\controller\ThreadController.class
 cn\redTrip\controller\UserMangerController.class
 cn\redTrip\config\CorsConfig.class
 cn\redTrip\controller\ReviewController.class
@@ -46,6 +45,7 @@ cn\redTrip\mapper\VisitMapper.class
 cn\redTrip\service\impl\LikeServiceImpl.class
 cn\redTrip\mapper\UserQuestionMapper.class
 cn\redTrip\entity\Collection.class
+cn\redTrip\controller\StarCollectionLikeController.class
 cn\redTrip\handler\GlobalHandler.class
 cn\redTrip\entity\dto\QuestionVo.class
 cn\redTrip\service\impl\UserServiceImpl.class
